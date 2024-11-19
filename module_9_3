@@ -1,0 +1,9 @@
+first = ['Strings', 'Student', 'Computers']
+second = ['Строка', 'Урбан', 'Компьютер']
+
+first_result = (len(first_string) - len(second_string) for first_string, second_string
+                in zip(first, second) if len(first_string) != len(second_string))
+print(list(first_result))
+
+second_result = (len(first[x]) == len(second[x]) for x in range(len(first)))
+print(list(second_result))
